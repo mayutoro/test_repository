@@ -1,0 +1,22 @@
+<%= form_for @post do |f| %>
+    <% if @post.errors.any? %>
+    <div id="error_explanation">
+        <%= @post.errors.messages[:name][0] %>
+    </div>
+    <% end %>
+    <p>
+        <div><%= f.label :name %></div>
+        <div><%= f.text_field :name %></div>
+    </p>
+    <p>
+        <div><%= f.label :email %></div>
+        <div><%= f.text_field :email %></div>
+    </p>
+    <p>
+        <div><%= f.label :note %></div>
+        <div><%= f.text_area :note %></div>
+    </p>
+    <div>
+        <%= f.submit %>
+    </div>
+<% end %>

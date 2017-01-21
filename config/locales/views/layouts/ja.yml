@@ -1,0 +1,6 @@
+ja:
+  views:
+    layouts:
+      application:
+        hello2: "へろー２"
+        to_topPage: ""

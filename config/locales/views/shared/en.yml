@@ -1,0 +1,6 @@
+en:
+  views:
+    shared:
+      to_topPage: "test_shared_en"
+      _header:
+        gnav_html: "<a href='%{url}'>Home</a>"

@@ -1,0 +1,5 @@
+ja:
+  views:
+    root:
+      index:
+        hello: "hello!"
