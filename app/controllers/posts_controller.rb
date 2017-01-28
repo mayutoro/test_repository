@@ -2,7 +2,7 @@ class PostsController < ApplicationController
 
   before_action :set_title, only: [:index, :show, :new, :edit] 
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_admin!
+  before_action :authenticate_admin!, only: [:index, :show, :edit, :update, :destroy]
   
   def index
      @posts = Post.all
@@ -18,7 +18,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to contact_index_path, notice: 'フォームが送信されました。'
+      redirect_to contact_index_path, flash: { message: 'フォームが送信されました。' }
     else
       @page_title = "おといあわせフォーム"
       render 'new'

@@ -2,9 +2,9 @@
 <p id="catchcopy">1人じゃできないことも、力を合わせればできる。やってみたいことをカタチにする、3人の楽しいものづくり。</p>
 <nav class="globalNavi">
   <ul>
-    <li class="<%= current_class "root" %>"><%= t 'views.shared._header.gnav_html', :url => "/" %></li>
-    <li class="<%= current_class "about" %>"><%= link_to "わたしたちについて", "/about/index" %></li>
-    <li class="<%= current_class "portfolio" %>"><%= link_to "つくったもの", "/portfolio/index" %></li>
-    <li class="<%= current_class "contact" %>"><%= link_to "おといあわせ", "/contact/index" %></li>
+    <li class="<%= current_class "root" %>"><%= t 'views.shared._header.gnav_root_html', :url => "/" %></li>
+    <li class="<%= current_class "about" %>"><%= t 'views.shared._header.gnav_about_html', :url => "/about/index" %></li>
+    <li class="<%= current_class "portfolio" %>"><%= t 'views.shared._header.gnav_portfolio_html', :url => "/portfolio/index" %></li>
+    <li class="<%= current_class "contact" %>"><%= t 'views.shared._header.gnav_contact_html', :url => "/contact/index" %></li>
   </ul>
 </nav>

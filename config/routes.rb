@@ -23,5 +23,5 @@ Rails.application.routes.draw do
   get 'portfolio/pf03'
   
   resources :posts
-
+  
 end

@@ -1,5 +1,12 @@
 module ApplicationHelper
   
+  def i18n_url_for(options)
+    if options[:locale] == I18n.default_locale
+      options[:locale] = nil
+    end
+    url_for(options)
+  end
+  
   def content_description(target_path)
     descriptions = {
       "/" => "komorikomashaは、コモモ・モリコ・ひろましゃ3人のメンバーが勢いでつくったものや活動を紹介しているサイトです。",

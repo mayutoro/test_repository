@@ -1,5 +1,4 @@
 ja:
-  views:
-    root:
-      index:
-        hello: "hello!"
+  root:
+    index:
+      hello: "hello!!!"

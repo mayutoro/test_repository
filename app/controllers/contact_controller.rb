@@ -1,5 +1,6 @@
 class ContactController < ApplicationController
   def index
-      @page_title = "おといあわせ"
+    @message = flash[:message]
+    @page_title = "おといあわせ"
   end
 end

@@ -1,6 +1,8 @@
 en:
   views:
     shared:
-      to_topPage: "test_shared_en"
       _header:
-        gnav_html: "<a href='%{url}'>Home</a>"
+        gnav_root_html: "<a href='%{url}'>Home</a>"
+        gnav_about_html: "<a href='%{url}'>About</a>"
+        gnav_portfolio_html: "<a href='%{url}'>Portfolio</a>"
+        gnav_contact_html: "<a href='%{url}'>Contact</a>"

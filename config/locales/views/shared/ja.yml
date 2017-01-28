@@ -2,4 +2,7 @@ ja:
   views:
     shared:
       _header:
-        gnav_html: "<a href='%{url}'>ほうむ</a>"
+        gnav_root_html: "<a href='%{url}'>ホーム</a>"
+        gnav_about_html: "<a href='%{url}'>わたしたちについて</a>"
+        gnav_portfolio_html: "<a href='%{url}'>つくったもの</a>"
+        gnav_contact_html: "<a href='%{url}'>おといあわせ</a>"
